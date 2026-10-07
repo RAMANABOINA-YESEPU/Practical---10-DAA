@@ -1,0 +1,34 @@
+MST 
+-----
+Kruskal`s ALGORTHM
+-----------------------
+Steps of Kruskal's Algorithm
+---------------------------------
+1. Create a list of all edges in the graph.
+2. Sort all edges in increasing order of their weights.
+3. Initialize each vertex as a separate set using DSU/Union-Find.
+4. Select the smallest edge from the sorted list.
+5. Check for a cycle:
+   - If the edge does not create a cycle → add it to the MST.
+   - If it creates a cycle → reject the edge.
+6. Repeat Steps 4–5 until the MST contains exactly V − 1 edges.
+7. Display the MST and calculate the total weight.
+
+
+List Edges
+    ↓
+Sort Edges
+    ↓
+Pick Smallest Edge
+    ↓
+Check Cycle
+  ↙       ↘
+YES       NO
+ ↓         ↓
+Reject    Add
+  ↘       ↙
+   Repeat
+      ↓
+   V - 1 Edges
+      ↓
+     MST
